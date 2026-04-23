@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community | Arunkumar Amaran</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.skills-section { margin-bottom: 64px; }
+
+.skills-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.skill-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.skill-block:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+
+.sb-icon { font-size: 1.8rem; margin-bottom: 12px; }
+.sb-title { font-weight: 600; font-size: 0.95rem; color: var(--navy); margin-bottom: 10px; }
+.sb-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.conf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.conf-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
+  border-bottom: 2px solid var(--border);
+  background: var(--bg2);
+}
+
+.conf-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-mid);
+  vertical-align: top;
+}
+
+.conf-table tr:hover td { background: #f7f9fd; }
+
+.conf-name { font-weight: 600; color: var(--navy); }
+.conf-role-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.badge-tpc { background: #dbeafe; color: #1e40af; }
+.badge-review { background: #dcfce7; color: #166534; }
+.badge-judge { background: #fef3c7; color: #92400e; }
+
+@media (max-width: 768px) {
+  .skills-grid-3 { grid-template-columns: 1fr; }
+  .conf-table { font-size: 0.8rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Arunkumar <em>Amaran</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="innovation.html">Publications</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="recognitions.html">Recognitions</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">// technical community</div>
+    <h1>Community &amp; Contributions</h1>
+    <p>Shaping the global AI and data engineering community through peer review, conference leadership, hackathon judging, and technical mentorship.</p>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <!-- Technical Skills -->
+  <div class="skills-section">
+    <span class="section-tag">// technical expertise</span>
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-lead">Deep specialization across cloud, data engineering, AI/ML, and distributed systems.</p>
+
+    <div class="skills-grid-3">
+      <div class="skill-block reveal">
+        <div class="sb-icon">☁️</div>
+        <div class="sb-title">Cloud Platforms</div>
+        <div class="sb-tags">
+          <span class="chip">GCP</span><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Oracle OCI</span><span class="chip">IAM</span><span class="chip">Cloud Spanner</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">🔄</div>
+        <div class="sb-title">Data Engineering (GCP)</div>
+        <div class="sb-tags">
+          <span class="chip">BigQuery</span><span class="chip">Dataflow</span><span class="chip">Cloud Composer</span><span class="chip">Pub/Sub</span><span class="chip">DataStream</span><span class="chip">Bigtable</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">🤖</div>
+        <div class="sb-title">AI / ML</div>
+        <div class="sb-tags">
+          <span class="chip">Generative AI</span><span class="chip">Agentic AI</span><span class="chip">LLMs</span><span class="chip">Predictive Analytics</span><span class="chip">AI Automation</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">🌊</div>
+        <div class="sb-title">Streaming & Messaging</div>
+        <div class="sb-tags">
+          <span class="chip">Apache Kafka</span><span class="chip">Flume</span><span class="chip">Pub/Sub</span><span class="chip">TIBCO EMS</span><span class="chip">ActiveMQ</span><span class="chip">Avro</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">🏗️</div>
+        <div class="sb-title">Big Data</div>
+        <div class="sb-tags">
+          <span class="chip">Hadoop</span><span class="chip">Spark</span><span class="chip">HBase</span><span class="chip">Hive</span><span class="chip">HDFS</span><span class="chip">MapReduce</span><span class="chip">Oozie</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">💻</div>
+        <div class="sb-title">Languages & Frameworks</div>
+        <div class="sb-tags">
+          <span class="chip">Java</span><span class="chip">SQL</span><span class="chip">SparkSQL</span><span class="chip">HQL</span><span class="chip">REST</span><span class="chip">SOA</span><span class="chip">Struts</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">📊</div>
+        <div class="sb-title">Analytics & Visualization</div>
+        <div class="sb-tags">
+          <span class="chip">Elasticsearch</span><span class="chip">Kibana</span><span class="chip">BigQuery Analytics</span><span class="chip">KPI Dashboards</span><span class="chip">Observability</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">🔧</div>
+        <div class="sb-title">DevOps & Tools</div>
+        <div class="sb-tags">
+          <span class="chip">Jenkins</span><span class="chip">Tomcat</span><span class="chip">Eclipse</span><span class="chip">Git/SVN</span><span class="chip">JProbe</span><span class="chip">VisualVM</span>
+        </div>
+      </div>
+      <div class="skill-block reveal">
+        <div class="sb-icon">🏛️</div>
+        <div class="sb-title">Architecture Patterns</div>
+        <div class="sb-tags">
+          <span class="chip">Microservices</span><span class="chip">Event-Driven</span><span class="chip">Data Lakehouse</span><span class="chip">Lambda</span><span class="chip">MVC</span><span class="chip">DAO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Conference Contributions -->
+  <div class="skills-section">
+    <span class="section-tag">// conference contributions</span>
+    <h2 class="section-title">Conference Roles</h2>
+    <p class="section-lead">Technical Program Committee member, peer reviewer, and judge across 20+ international conferences.</p>
+
+    <table class="conf-table">
+      <thead>
+        <tr>
+          <th>Conference</th>
+          <th>Full Name</th>
+          <th>Role</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="reveal">
+          <td><span class="conf-name">BDAA</span></td>
+          <td>Big Data Analytics and Applications</td>
+          <td><span class="conf-role-badge badge-tpc">TPC Member</span></td>
+          <td>2025</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">CCNCPS</span></td>
+          <td>Communication, Computing, Networking & Control in Cyber-Physical Systems</td>
+          <td><span class="conf-role-badge badge-tpc">TPC Member</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">ASPAI</span></td>
+          <td>8th Int'l Conference on Advances in Signal Processing and AI</td>
+          <td><span class="conf-role-badge badge-tpc">TPC Member</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">ICAIE</span></td>
+          <td>International Conference on AI Engineering and Innovation</td>
+          <td><span class="conf-role-badge badge-tpc">TPC Member</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">KSU Innovation Quest</span></td>
+          <td>Kennesaw State University Innovation Quest</td>
+          <td><span class="conf-role-badge badge-judge">Judge</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">Globee Cybersecurity</span></td>
+          <td>Globee Awards — Cybersecurity Category</td>
+          <td><span class="conf-role-badge badge-judge">Judge</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">Globee Excellence</span></td>
+          <td>Globee Awards — Excellence Category</td>
+          <td><span class="conf-role-badge badge-judge">Judge</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">KSU Hackathon</span></td>
+          <td>KSU Hackathon for Social Good</td>
+          <td><span class="conf-role-badge badge-judge">Judge</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">ICIPTM</span></td>
+          <td>International Conference on Innovative Practices in Technology and Management</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">ICBDA</span></td>
+          <td>International Conference on Big Data Analytics</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">IMED</span></td>
+          <td>Innovations in Machine, Engineering and Digital Technologies</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">AIEI</span></td>
+          <td>International Conference on AI Engineering and Innovation</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">QCETCS</span></td>
+          <td>Quantum Computing, Emerging Technologies and Cyber Security</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">NQComp</span></td>
+          <td>Next-Gen Quantum and Advanced Computing</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">ICAISET</span></td>
+          <td>IEEE Int'l Conference on AI, Systems, and Emerging Technologies</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">AICCoNS</span></td>
+          <td>Artificial Intelligence, Computation, Communication, and Network Security</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">RRRAI</span></td>
+          <td>Responsible, Risk-aware, and Regulated Artificial Intelligence</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+        <tr class="reveal">
+          <td><span class="conf-name">INCIP</span></td>
+          <td>International Conference on Next Generation Communication & Information Processing</td>
+          <td><span class="conf-role-badge badge-review">Reviewer</span></td>
+          <td>2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  <div>© 2026 Arunkumar Amaran. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i*50); });
+}, { threshold: 0.05 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

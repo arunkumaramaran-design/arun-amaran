@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership & Experience | Arunkumar Amaran</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.role-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  transition: box-shadow 0.25s;
+}
+.role-block:hover { box-shadow: var(--shadow-lg); }
+
+.role-header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+  padding: 26px 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.role-company {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 6px;
+}
+
+.role-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+
+.role-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.08);
+  padding: 5px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.role-body { padding: 28px 32px; }
+
+.role-body p {
+  color: var(--text-mid);
+  font-size: 0.94rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.impact-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.impact-label {
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.impact-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.role-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.role-list li {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.55;
+}
+
+.role-list li:last-child { border-bottom: none; }
+
+.role-list li::before {
+  content: '→';
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .role-header { padding: 20px; }
+  .role-body { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Arunkumar <em>Amaran</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="innovation.html">Publications</a></li>
+      <li><a href="leadership.html" class="active">Leadership</a></li>
+      <li><a href="recognitions.html">Recognitions</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">// leadership & experience</div>
+    <h1>Leadership &amp; Engineering</h1>
+    <p>Senior engineering leadership spanning enterprise data platforms, cloud modernization, AI-driven automation, and supply chain intelligence — delivering measurable business impact at Macy's and The Home Depot.</p>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <span class="section-tag">// current role</span>
+  <h2 class="section-title">Engineering Leadership</h2>
+  <p class="section-lead">Strategic technology leadership in AI-driven data engineering, cloud-native platform design, and enterprise modernization.</p>
+
+  <!-- Macy's Current -->
+  <div class="role-block reveal">
+    <div class="role-header">
+      <div>
+        <div class="role-company">Macy's Systems & Technology</div>
+        <div class="role-title">Tech Manager — Data Engineering & Architecture</div>
+      </div>
+      <div class="role-date">Nov 2023 – Present</div>
+    </div>
+    <div class="role-body">
+      <p>Leading enterprise-wide data democratization by designing and supporting real-time and batch data pipelines across major business domains including Merchandising, Marketing, Finance, Digital, Supply Chain, Customer, and Pricing. Working extensively with GCP, AWS, Azure, and Oracle OCI to process large-scale, federated enterprise data.</p>
+      <p>Designed and developed proprietary ingestion frameworks providing real-time visibility into sales and inventory. Built a custom cloud-native processing framework on GCP using Cloud Composer, BigQuery, DataStream, Dataflow, and Pub/Sub. Implemented data quality and observability dashboards delivering real-time insights into data freshness, completeness, and quality scores.</p>
+      <p>Leveraged Generative AI to optimize SQL and query performance — significantly reducing Google Cloud operational costs — and built an agentic framework with multiple collaborating AI agents to automatically generate and review upgrade code, eliminating redundant upgrade efforts and accelerating modernization across the enterprise.</p>
+
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-label">Business Domains</div>
+          <div class="impact-value">7+</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-label">Cloud Platforms</div>
+          <div class="impact-value">4</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-label">AI Frameworks Built</div>
+          <div class="impact-value">2+</div>
+        </div>
+      </div>
+
+      <ul class="role-list">
+        <li>Gathered business requirements and performed analysis on frameworks needed to abstract data access complexity</li>
+        <li>Architected and developed automated real-time data ingestion frameworks using Dataflow, Kafka, and Flume</li>
+        <li>Architected and developed real-time ingestion framework for time series business data into BigQuery and Bigtable</li>
+        <li>Built custom Kafka frameworks for message repositories, replay, and custom serialization between big data components</li>
+        <li>Developed automated batch framework MAXIS to ingest structured data and build a data lake in BigQuery</li>
+        <li>Involved in analysis, design, implementation and securing GCP projects using IAM for BigQuery, Bigtable, and Cloud Spanner</li>
+        <li>Developed complex analytics and aggregation queries using BigQuery for visualization and reporting</li>
+      </ul>
+      <div style="margin-top:16px;">
+        <span class="chip">GCP</span><span class="chip">BigQuery</span><span class="chip">Dataflow</span><span class="chip">Cloud Composer</span><span class="chip">Pub/Sub</span><span class="chip">DataStream</span><span class="chip">Kafka</span><span class="chip">Generative AI</span><span class="chip">Agentic AI</span><span class="chip">IAM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Macy's DaaS -->
+  <div class="role-block reveal">
+    <div class="role-header">
+      <div>
+        <div class="role-company">Macy's Systems & Technology</div>
+        <div class="role-title">Staff Data Engineer — Data as a Service (DaaS)</div>
+      </div>
+      <div class="role-date">Nov 2018 – Oct 2023</div>
+    </div>
+    <div class="role-body">
+      <p>Led the modernization and migration of enterprise data platforms from on-prem Hadoop and legacy databases to Google Cloud Platform and Microsoft Azure. Designed a robust cloud migration architecture by analyzing and mapping existing Hadoop components to equivalent cloud-native services, providing strategic guidance on lift-and-shift versus system rewrites.</p>
+      <p>Successfully migrated three major Hadoop cluster applications and datasets to Google Cloud. Enhanced Macy's Loyalty Analytics to deliver accurate visibility into total customer rewards. Modernized real-time ingestion pipelines by migrating from TIBCO EMS to Kafka. Developed a Customer 360 solution on Hadoop enabling advanced customer segmentation, personalized promotions, and improved customer experience.</p>
+
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-label">Hadoop Apps Migrated</div>
+          <div class="impact-value">3</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-label">Cloud Platforms</div>
+          <div class="impact-value">GCP + Azure</div>
+        </div>
+      </div>
+
+      <ul class="role-list">
+        <li>Architected automated real-time data ingestion to Hadoop Cluster using Kafka, Flume, HDFS, and Bigtable</li>
+        <li>Built custom KARIBA Frameworks for message repositories and Kafka Sources/connectors</li>
+        <li>Architected automated batch framework LATICE to ingest structured data from Teradata, Oracle, SQL Server, MySQL</li>
+        <li>Implemented reliable fault-tolerant Flume topology for all real-time ingestion into GCS/BigQuery</li>
+        <li>Developed Customer 360 solution capturing direct and indirect customer interactions across business units</li>
+      </ul>
+      <div style="margin-top:16px;">
+        <span class="chip">Hadoop</span><span class="chip">GCP</span><span class="chip">Azure</span><span class="chip">Kafka</span><span class="chip">Flume</span><span class="chip">HDFS</span><span class="chip">Bigtable</span><span class="chip">SparkSQL</span><span class="chip">Customer 360</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Randstad / MAIN Analytics -->
+  <div class="role-block reveal">
+    <div class="role-header">
+      <div>
+        <div class="role-company">Randstad Technologies → Macy's Systems & Technologies</div>
+        <div class="role-title">Lead Developer — MAIN Analytics</div>
+      </div>
+      <div class="role-date">Jan 2015 – Oct 2016</div>
+    </div>
+    <div class="role-body">
+      <p>Built Macy's Active Information Network (MAIN) Analytics — the next-generation Enterprise Managed Information Platform providing holistic and cohesive management of core information domains: Product, Inventory, Sales, Price, Associate, and Offers.</p>
+      <ul class="role-list">
+        <li>Developed automated real-time data ingestion to HDFS for Enterprise Messages/Business Events using Kafka, Flume, MapReduce, Avro</li>
+        <li>Developed Custom Flume JMS Sources, JMS to Avro Message converters, and Custom HDFS Sink</li>
+        <li>Designed Hive tables and developed HQL queries for batch KPI analysis; scheduling with Oozie</li>
+        <li>Integrated Hive with Elasticsearch and Kibana via ES Hadoop plugin; built KPI visualization dashboard</li>
+      </ul>
+      <div style="margin-top:16px;">
+        <span class="chip">HDFS</span><span class="chip">HBase</span><span class="chip">Hive</span><span class="chip">Kafka</span><span class="chip">Flume</span><span class="chip">Elasticsearch</span><span class="chip">Kibana</span><span class="chip">Oozie</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <span class="section-tag">// tcs & home depot</span>
+  <h2 class="section-title">Supply Chain Visibility</h2>
+  <p class="section-lead">Built mission-critical supply chain and emergency logistics systems at The Home Depot, ensuring freight visibility across the entire pipeline.</p>
+
+  <!-- Home Depot Emergency Visibility -->
+  <div class="role-block reveal">
+    <div class="role-header">
+      <div>
+        <div class="role-company">Tata Consultancy Services → The Home Depot, Atlanta GA</div>
+        <div class="role-title">Lead Developer — Emergency Visibility</div>
+      </div>
+      <div class="role-date">Feb 2013 – Jan 2015</div>
+    </div>
+    <div class="role-body">
+      <p>Built the Emergency Visibility application enabling increased data accuracy and improved processing, tracking, and reporting of freight status throughout the Supply Chain pipeline. Mounted GPS devices to trailers and processed real-time positional information to track high-priority freight such as generators during emergencies.</p>
+      <ul class="role-list">
+        <li>Developed SOA architecture with RESTful Web Services to get GPS telemetric details from vendor Numerex</li>
+        <li>Implemented Java Message Services using Active Message Queue for real-time inter-application communication</li>
+        <li>Designed overall application flow in collaboration with Enterprise IT Architects</li>
+        <li>Developed emergency visibility reporting and exception identification for field team and store</li>
+        <li>Used Jenkins for build automation and deployment to Tomcat 6.0 Grid Server environment</li>
+      </ul>
+      <div style="margin-top:16px;">
+        <span class="chip">Java</span><span class="chip">REST</span><span class="chip">SOA</span><span class="chip">ActiveMQ</span><span class="chip">GPS Tracking</span><span class="chip">Jenkins</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- APV -->
+  <div class="role-block reveal">
+    <div class="role-header">
+      <div>
+        <div class="role-company">Tata Consultancy Services → The Home Depot, Atlanta GA</div>
+        <div class="role-title">Lead Developer — Advance Pipeline Visibility (APV)</div>
+      </div>
+      <div class="role-date">Mar 2011 – Feb 2012</div>
+    </div>
+    <div class="role-body">
+      <p>Built APV — a tool enabling IP&R Call Centre users to determine the status of product inbound to stores from anywhere within the supply chain, providing accurate estimates of store arrival based on status and location.</p>
+      <ul class="role-list">
+        <li>Designed and developed application using Java Batch, Struts, JSP, HTML, and JQuery</li>
+        <li>Developed SOA architecture-based WebService calls for Lead Time and Revised Estimated Arrival Date</li>
+        <li>Integrated application logic with TIBCO BE and BW</li>
+      </ul>
+      <div style="margin-top:16px;">
+        <span class="chip">Java Batch</span><span class="chip">Struts</span><span class="chip">SOA</span><span class="chip">TIBCO BE</span><span class="chip">TIBCO BW</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <span class="section-tag">// hewlett packard</span>
+  <h2 class="section-title">Early Career</h2>
+
+  <div class="role-block reveal">
+    <div class="role-header">
+      <div>
+        <div class="role-company">Hewlett Packard — Bangalore, India</div>
+        <div class="role-title">Java Developer — Flash Reporting & Prime Deal Information Management</div>
+      </div>
+      <div class="role-date">Jul 2006 – Dec 2009</div>
+    </div>
+    <div class="role-body">
+      <p>Built Flash Reporting — a data collection application gathering sales data from vendors daily for validation, compensation reporting, and downstream data warehousing for business planning and forecasting. Also designed Prime Deal Information Management, a prototype for faster turnaround in deal creation with customer-specific catalogue generation.</p>
+      <div style="margin-top:16px;">
+        <span class="chip">Java</span><span class="chip">JSP</span><span class="chip">Oracle</span><span class="chip">EDI</span><span class="chip">Multi-Threading</span><span class="chip">MVC</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div>© 2026 Arunkumar Amaran. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i*80); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

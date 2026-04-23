@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Arunkumar Amaran</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-info-item:last-child { border-bottom: none; }
+
+.ci-icon {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--navy), var(--navy2));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.ci-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.ci-value {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.ci-value a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.ci-value a:hover { text-decoration: underline; }
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.connect-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.connect-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.connect-card-icon {
+  width: 40px; height: 40px;
+  background: var(--bg2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.connect-card-name { font-weight: 600; font-size: 0.88rem; color: var(--navy); }
+.connect-card-sub { font-size: 0.75rem; color: var(--text-light); }
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .connect-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Arunkumar <em>Amaran</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="innovation.html">Publications</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="recognitions.html">Recognitions</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">// contact</div>
+    <h1>Get in Touch</h1>
+    <p>Open to collaborations, research discussions, conference invitations, and technology consulting engagements.</p>
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="contact-grid">
+
+    <div class="reveal">
+      <span class="section-tag">// contact details</span>
+      <h2 class="section-title" style="font-size:1.8rem;">Contact Information</h2>
+
+      <div class="contact-info-item">
+        <div class="ci-icon">✉️</div>
+        <div>
+          <div class="ci-label">Email</div>
+          <div class="ci-value"><a href="mailto:arunkumar.amaran@ieee.org">arunkumar.amaran@ieee.org</a></div>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="ci-icon">📍</div>
+        <div>
+          <div class="ci-label">Location</div>
+          <div class="ci-value">Atlanta, GA, USA</div>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="ci-icon">🏢</div>
+        <div>
+          <div class="ci-label">Current Employer</div>
+          <div class="ci-value">Macy's Systems & Technology</div>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="ci-icon">🎓</div>
+        <div>
+          <div class="ci-label">IEEE Membership</div>
+          <div class="ci-value">Senior Member — IEEE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <span class="section-tag">// professional profiles</span>
+      <h2 class="section-title" style="font-size:1.8rem;">Connect Online</h2>
+
+      <div class="connect-grid">
+        <a href="https://www.linkedin.com/in/arunkumar-amaran/" target="_blank" class="connect-card">
+          <div class="connect-card-icon">💼</div>
+          <div>
+            <div class="connect-card-name">LinkedIn</div>
+            <div class="connect-card-sub">Professional network</div>
+          </div>
+        </a>
+        <a href="https://scholar.google.com/citations?user=LBd4mUEAAAAJ&hl=en" target="_blank" class="connect-card">
+          <div class="connect-card-icon">📚</div>
+          <div>
+            <div class="connect-card-name">Google Scholar</div>
+            <div class="connect-card-sub">Research & citations</div>
+          </div>
+        </a>
+        <a href="https://orcid.org/0009-0007-8225-0132" target="_blank" class="connect-card">
+          <div class="connect-card-icon">🔬</div>
+          <div>
+            <div class="connect-card-name">ORCID</div>
+            <div class="connect-card-sub">0009-0007-8225-0132</div>
+          </div>
+        </a>
+        <a href="mailto:arunkumar.amaran@ieee.org" class="connect-card">
+          <div class="connect-card-icon">✉️</div>
+          <div>
+            <div class="connect-card-name">Email</div>
+            <div class="connect-card-sub">Direct message</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="margin-top:40px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:28px;">
+        <div style="font-weight:600;color:var(--navy);margin-bottom:10px;">Open to collaborations on:</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+          <li style="display:flex;gap:10px;font-size:0.88rem;color:var(--text-mid);align-items:center;"><span style="color:var(--accent);">→</span> AI & Data Engineering research papers</li>
+          <li style="display:flex;gap:10px;font-size:0.88rem;color:var(--text-mid);align-items:center;"><span style="color:var(--accent);">→</span> IEEE/Springer conference review panels</li>
+          <li style="display:flex;gap:10px;font-size:0.88rem;color:var(--text-mid);align-items:center;"><span style="color:var(--accent);">→</span> Cloud architecture & data engineering consulting</li>
+          <li style="display:flex;gap:10px;font-size:0.88rem;color:var(--text-mid);align-items:center;"><span style="color:var(--accent);">→</span> Technical speaking invitations</li>
+          <li style="display:flex;gap:10px;font-size:0.88rem;color:var(--text-mid);align-items:center;"><span style="color:var(--accent);">→</span> Hackathon & innovation award judging</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 Arunkumar Amaran. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i*80); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

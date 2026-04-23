@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Arunkumar Amaran</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.about-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-avatar {
+  text-align: center;
+}
+
+.avatar-box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  margin: 0 auto 18px;
+  letter-spacing: -2px;
+}
+
+.avatar-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.avatar-role {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.about-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.about-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #eef3fb;
+}
+
+.about-text h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 32px 0 12px;
+}
+
+.about-text h3:first-child { margin-top: 0; }
+
+.about-text p {
+  color: var(--text-mid);
+  margin-bottom: 16px;
+  line-height: 1.78;
+  font-size: 0.96rem;
+}
+
+.recognition-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.recognition-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-mid);
+}
+
+.recognition-list li:last-child { border-bottom: none; }
+
+.recognition-list li::before {
+  content: '●';
+  color: var(--accent);
+  font-size: 0.6rem;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.mem-card {
+  background: var(--navy);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.mem-card .mem-abbr {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6aa3e8;
+  margin-bottom: 6px;
+}
+
+.mem-card .mem-full {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.4;
+}
+
+.edu-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.edu-row:last-child { border-bottom: none; }
+
+.edu-icon {
+  width: 40px; height: 40px;
+  background: #eef3fb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.edu-degree { font-weight: 600; font-size: 0.95rem; color: var(--navy); }
+.edu-school { font-size: 0.85rem; color: var(--text-mid); }
+.edu-year { font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; color: var(--text-light); }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .membership-cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Arunkumar <em>Amaran</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="innovation.html">Publications</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="recognitions.html">Recognitions</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">// about</div>
+    <h1>Arunkumar Amaran</h1>
+    <p>Senior Technology Leader · IEEE Senior Member · Tech Manager, Data Engineering & Architecture at Macy's Technology</p>
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="about-grid">
+
+    <div class="about-avatar reveal">
+      <div class="avatar-box">AA</div>
+      <div class="avatar-name">Arunkumar Amaran</div>
+      <div class="avatar-role">Senior Technology Leader</div>
+      <div class="about-links">
+        <a href="https://www.linkedin.com/in/arunkumar-amaran/" target="_blank" class="about-link">💼 LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=LBd4mUEAAAAJ&hl=en" target="_blank" class="about-link">📚 Google Scholar</a>
+        <a href="https://orcid.org/0009-0007-8225-0132" target="_blank" class="about-link">🔬 ORCID</a>
+        <a href="mailto:arunkumar.amaran@ieee.org" class="about-link">✉️ Email</a>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <h3>Professional Overview</h3>
+      <p>Arunkumar Amaran is an accomplished Senior Technology Leader with over 20 years of proven expertise in architecting, developing, and delivering enterprise-scale applications across retail, healthcare, and industrial technology domains. His core focus has been on building AI-driven, cloud-native, data-centric automation frameworks that drive scalability, security, and business agility using modern architectures on GCP, AWS, and microservice ecosystems.</p>
+
+      <p>In his current role with Macy's Systems & Technology as a Tech Manager for Data Engineering and Architecture, he is responsible for creating and providing leadership in digital transformation initiatives such as AI-based automation of Data Engineering Pipelines, Data Insights driving customer behaviour and predictions, predictive inventory management, and AI-driven predictive observability to improve operational efficiency.</p>
+
+      <p>He brings prior experience from Home Depot, where he developed data-driven real-time analytics on shipments during emergencies and supply chain visibility through AI and data engineering. Across his career he has built proprietary ingestion frameworks, agentic AI systems with collaborating agents for automated code generation, and leveraged Generative AI to optimize SQL performance and significantly reduce cloud operational costs.</p>
+
+      <p>Beyond his technical work, Arunkumar actively contributes to the global tech community through his role as a Technical Program Committee member and reviewer for various IEEE and Springer conferences. He is passionate about the development of trustworthy, human-centric AI in line with U.S. NSTC guiding principles.</p>
+
+      <hr class="divider" style="margin:32px 0;">
+
+      <h3>Academic & Research Interests</h3>
+      <p>Generative AI for enterprise data systems, streaming and event-driven retail analytics, synthetic data generation for demand forecasting, cloud-native data pipeline automation, and AI-driven predictive observability.</p>
+
+      <hr class="divider" style="margin:32px 0;">
+
+      <h3>Education</h3>
+      <div class="edu-row reveal">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-degree">Master of Engineering — Electronics Engineering</div>
+          <div class="edu-school">Anna University</div>
+          <div class="edu-year">June 2004 – May 2006</div>
+        </div>
+      </div>
+      <div class="edu-row reveal">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-degree">Bachelor of Engineering — Electrical & Electronic Engineering</div>
+          <div class="edu-school">Bharathidasan University</div>
+          <div class="edu-year">July 1999 – May 2003</div>
+        </div>
+      </div>
+
+      <hr class="divider" style="margin:32px 0;">
+
+      <h3>Professional Memberships</h3>
+      <div class="membership-cards">
+        <div class="mem-card reveal">
+          <div class="mem-abbr">IEEE</div>
+          <div class="mem-full">Senior Member — Institute of Electrical and Electronics Engineers</div>
+        </div>
+        <div class="mem-card reveal">
+          <div class="mem-abbr">IETE</div>
+          <div class="mem-full">Fellow — Institution of Electronics & Telecommunication Engineers</div>
+        </div>
+        <div class="mem-card reveal">
+          <div class="mem-abbr">SAS</div>
+          <div class="mem-full">Eminent Fellow — Scholars Academic and Scientific Society</div>
+        </div>
+      </div>
+
+      <hr class="divider" style="margin:32px 0;">
+
+      <h3>Professional Recognition</h3>
+      <ul class="recognition-list">
+        <li>IEEE Senior Member — peer-recognized technical leadership and contributions</li>
+        <li>Fellow, IETE — Institution of Electronics & Telecommunication Engineers</li>
+        <li>Eminent Fellow, SAS — Scholars Academic and Scientific Society</li>
+        <li>Technical Program Committee member for IEEE and Springer international conferences</li>
+        <li>Peer reviewer — 80+ papers across AI/ML, robotics, energy, and cloud applications</li>
+        <li>Judge — KSU Innovation Quest 2026 (AI, Quantum, IoT)</li>
+        <li>Judge — Globee Awards for Cybersecurity and Excellence</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 Arunkumar Amaran. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i*80); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

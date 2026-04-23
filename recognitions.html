@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recognitions | Arunkumar Amaran</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.recognition-section { margin-bottom: 64px; }
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.rec-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  transition: box-shadow 0.25s, transform 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.rec-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.rec-card-icon {
+  width: 48px; height: 48px;
+  background: linear-gradient(135deg, var(--navy), var(--navy2));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.rec-card-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.rec-card-desc {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.membership-row-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.mem-full-card {
+  background: linear-gradient(135deg, var(--navy) 0%, #1e3a6e 100%);
+  border-radius: 12px;
+  padding: 28px;
+  color: white;
+}
+
+.mem-full-card .abbr {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6aa3e8;
+  margin-bottom: 8px;
+}
+
+.mem-full-card .level {
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.mem-full-card .name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.mem-full-card .full-name {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+.tpc-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.tpc-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 18px;
+}
+
+.tpc-name {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.tpc-full {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  margin-bottom: 4px;
+}
+
+.tpc-loc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .membership-row-full { grid-template-columns: 1fr; }
+  .tpc-list { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Arunkumar <em>Amaran</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="innovation.html">Publications</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="recognitions.html" class="active">Recognitions</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">// inspiration & recognitions</div>
+    <h1>Recognitions &amp; Memberships</h1>
+    <p>Professional memberships, conference committee roles, peer review contributions, and judging panels demonstrating technical leadership and peer acknowledgment.</p>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <!-- Memberships -->
+  <div class="recognition-section">
+    <span class="section-tag">// fellow & senior memberships</span>
+    <h2 class="section-title">Professional Memberships</h2>
+    <p class="section-lead">Peer-recognized memberships in leading engineering and scientific societies.</p>
+
+    <div class="membership-row-full">
+      <div class="mem-full-card reveal">
+        <div class="abbr">IEEE</div>
+        <div class="level">Senior Member</div>
+        <div class="name">Institute of Electrical and Electronics Engineers</div>
+        <div class="full-name">Senior Member — the highest grade of membership for which IEEE members can apply, recognizing technical contributions and leadership.</div>
+      </div>
+      <div class="mem-full-card reveal">
+        <div class="abbr">IETE</div>
+        <div class="level">Fellow</div>
+        <div class="name">Institution of Electronics &amp; Telecommunication Engineers</div>
+        <div class="full-name">Fellow Membership recognizing significant contributions to the field of electronics and telecommunications engineering.</div>
+      </div>
+      <div class="mem-full-card reveal">
+        <div class="abbr">SAS</div>
+        <div class="level">Eminent Fellow</div>
+        <div class="name">Scholars Academic and Scientific Society</div>
+        <div class="full-name">Eminent Fellow Membership in recognition of scholarly academic and scientific contributions.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- TPC -->
+  <div class="recognition-section">
+    <span class="section-tag">// technical program committee</span>
+    <h2 class="section-title">Program Committee Roles</h2>
+    <p class="section-lead">Active TPC membership for international IEEE and Springer conferences on AI, data, and emerging technologies.</p>
+
+    <div class="tpc-list">
+      <div class="tpc-item reveal">
+        <div class="tpc-name">BDAA 2025</div>
+        <div class="tpc-full">Big Data Analytics and Applications</div>
+        <div class="tpc-loc">Innsbruck, Austria</div>
+      </div>
+      <div class="tpc-item reveal">
+        <div class="tpc-name">CCNCPS 2026</div>
+        <div class="tpc-full">Communication, Computing, Networking & Control in Cyber-Physical Systems</div>
+        <div class="tpc-loc">Dubai, UAE</div>
+      </div>
+      <div class="tpc-item reveal">
+        <div class="tpc-name">ASPAI 2026</div>
+        <div class="tpc-full">8th Int'l Conference on Advances in Signal Processing and Artificial Intelligence</div>
+        <div class="tpc-loc">Palma de Mallorca, Spain</div>
+      </div>
+      <div class="tpc-item reveal">
+        <div class="tpc-name">ICAIE 2026</div>
+        <div class="tpc-full">International Conference on AI Engineering and Innovation</div>
+        <div class="tpc-loc">Taicang, Suzhou, China</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Judging -->
+  <div class="recognition-section">
+    <span class="section-tag">// judging panels</span>
+    <h2 class="section-title">Awards &amp; Hackathon Judge</h2>
+    <p class="section-lead">Recognized as a technical expert and judge at prestigious innovation and industry award programs.</p>
+
+    <div class="rec-grid">
+      <div class="rec-card reveal">
+        <div class="rec-card-icon">🏆</div>
+        <div class="rec-card-title">KSU Innovation Quest 2026</div>
+        <div class="rec-card-desc">Acted as a judge at Kennesaw State University's Innovation Quest 2026 in the areas of Artificial Intelligence, Quantum Computing, and IoT technology.</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-icon">🔐</div>
+        <div class="rec-card-title">Globee Awards — Cybersecurity</div>
+        <div class="rec-card-desc">Judge for the Globee Awards in the cybersecurity category, evaluating enterprise security innovations and solutions.</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-icon">⭐</div>
+        <div class="rec-card-title">Globee Awards — Excellence</div>
+        <div class="rec-card-desc">Judge for the Globee Awards in the excellence category, recognizing standout technology products and organizations.</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-icon">💡</div>
+        <div class="rec-card-title">KSU Hackathon for Social Good 2026</div>
+        <div class="rec-card-desc">Acted as a judge at Kennesaw State University's Hackathon for Social Good, evaluating technology-for-impact solutions.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- Peer Review -->
+  <div class="recognition-section">
+    <span class="section-tag">// peer review</span>
+    <h2 class="section-title">Peer Review Contributions</h2>
+    <p class="section-lead">80+ technical papers reviewed across AI/ML, robotics, energy, and cloud applications.</p>
+
+    <div class="rec-grid">
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ICIPTM 2026</div>
+        <div class="rec-card-desc">International Conference on Innovative Practices in Technology and Management</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ICBDA 2026</div>
+        <div class="rec-card-desc">International Conference on Big Data Analytics</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">IMED 2026</div>
+        <div class="rec-card-desc">Innovations in Machine, Engineering and Digital Technologies</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">AIEI 2026</div>
+        <div class="rec-card-desc">International Conference on AI Engineering and Innovation</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ICAIE 2026</div>
+        <div class="rec-card-desc">International Conference on Artificial Intelligence and Education</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">QCETCS 2026</div>
+        <div class="rec-card-desc">International Conference on Quantum Computing, Emerging Technologies and Cyber Security</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">NQComp 2026</div>
+        <div class="rec-card-desc">Next-Gen Quantum and Advanced Computing: Algorithms, Security, and Beyond</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ICAISET 2026</div>
+        <div class="rec-card-desc">IEEE International Conference on Artificial Intelligence, Systems, and Emerging Technologies</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">AICCoNS 2026</div>
+        <div class="rec-card-desc">Artificial Intelligence, Computation, Communication, and Network Security</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ISSATK 2026</div>
+        <div class="rec-card-desc">International Symposium of Systems, Advanced Technologies and Knowledge</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">RRRAI 2026</div>
+        <div class="rec-card-desc">Responsible, Risk-aware, and Regulated Artificial Intelligence</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">INCIP 2026</div>
+        <div class="rec-card-desc">International Conference on Next Generation Communication & Information Processing</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">CCNCPS 2026</div>
+        <div class="rec-card-desc">International Conference on Communication, Computing, Networking, and Control in Cyber-Physical Systems</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ICISCN 2026</div>
+        <div class="rec-card-desc">International Conference on Intelligent Systems and Computational Networks</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">CEECT 2026</div>
+        <div class="rec-card-desc">International Conference on Electrical Engineering and Control Technologies</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">ASPAI 2026</div>
+        <div class="rec-card-desc">8th International Conference on Advances in Signal Processing and Artificial Intelligence</div>
+      </div>
+      <div class="rec-card reveal">
+        <div class="rec-card-title">CE2CT 2026</div>
+        <div class="rec-card-desc">Second International Conference on Advances in Computer Science, Electrical, Electronics, and Communication Technologies</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div>© 2026 Arunkumar Amaran. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i*60); });
+}, { threshold: 0.05 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
